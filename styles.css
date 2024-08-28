@@ -1,0 +1,104 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: Outfit, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+#container {
+    background-color: white;
+    color: hsl(30, 10%, 34%);
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid inherit;
+    padding: 10px;
+    border-radius: 2%;
+}  
+h1 {
+    font-family: "Young Serif", serif;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 0;
+}
+#aligner{
+    border: 1px solid inherit;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    align-self: center;
+    border-radius: 2%;
+}
+#inner_container {
+    background-color: hsl(330, 100%, 98%);
+    width: 80%;
+    border-radius: 3px;
+    align-self: center;
+    line-height: 2em;
+}
+#ingredients {
+    line-height: 2em;
+}
+#instructions {
+    line-height: 1.5em;
+}
+h2, h3, .calories, ul li::marker, ol li::marker {
+    color: hsl(332, 51%, 32%);
+} 
+ol li::marker, .calories {
+    font-weight: bold;
+}
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+h3 {
+    font-size: 1rem;
+    padding-left: 15px;
+}
+.bold{
+    font-weight: bold;
+}
+.nutrition {
+    display: flex;flex-direction: column;
+}
+.nutrition p{
+   display: flex;
+   justify-content: space-between ;
+}
+.nutrition p span {
+    margin-right: 35%;
+}
+.nutrition p:first-child span {
+    margin-right: 30%;
+}
+.divider{
+    border-bottom:1px solid hsl(30, 18%, 87%);
+  }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 420px){
+    .container {
+        width: 100%;
+    }
+} 
